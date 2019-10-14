@@ -2,7 +2,7 @@ import delay from './utils/delay'
 import typesValidator from './utils/typesValidator'
 import { typedTypes } from './types'
 
-const Typed = function ({message = 'Test typo...', ms = 1000, remove = false, infinity = false, selector = 'typo'}) {
+const Typed = function ({message = 'Test typo...', ms = 100, remove = false, infinity = false, selector = 'typed'} = {}) {
 	this.message = message
 	this.ms = ms
 	this.remove = remove
@@ -52,5 +52,9 @@ const Typed = function ({message = 'Test typo...', ms = 1000, remove = false, in
 		}
 	}
 }
+
+const typed = new Typed()
+
+typed.init()
 
 export default Typed
