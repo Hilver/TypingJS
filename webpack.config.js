@@ -7,7 +7,8 @@ module.exports = {
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: 'typed.min.js'
+		filename: 'typed.min.js',
+		library: 'Typed'
 	},
 	module: {
 		rules: [{
@@ -21,15 +22,7 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: './src/index.html',
-			minify: {
-                collapseWhitespace: true,
-                removeComments: true,
-                removeRedundantAttributes: true,
-                removeScriptTypeAttributes: true,
-                removeStyleLinkTypeAttributes: true,
-                useShortDoctype: true
-            }
+			template: './src/index.html'
 		})
 	]
 }

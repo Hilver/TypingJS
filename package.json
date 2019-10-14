@@ -1,18 +1,19 @@
 {
   "name": "typo",
   "version": "1.0.0",
-  "description": "A Lightweight styling extension for entering letters",
-  "main": "index.js",
+  "description": "A Lightweight styling extension for typing letters",
+  "main": "typed.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -d"
+    "build": "webpack -d",
+    "start": "webpack-dev-server --output-public-path=/dist/"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Hilver/TypoJS.git"
   },
   "keywords": [
-    "typer",
+    "typing",
     "javascript"
   ],
   "author": "Pawel Peczkowski",
@@ -28,7 +29,8 @@
     "babel-loader": "^8.0.6",
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.41.1",
-    "webpack-cli": "^3.3.9"
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
   },
   "dependencies": {
     "@babel/runtime": "^7.6.3"

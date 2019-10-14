@@ -1,9 +1,20 @@
 import delay from './utils/delay'
+import typesValidator from './utils/typesValidator'
+import { typedTypes } from './types'
 
-const Typed = function ({message = 'Test typo...', ms = 100, remove = false, infinity = false, selector = 'typo'}) {
+const Typed = function ({message = 'Test typo...', ms = 1000, remove = false, infinity = false, selector = 'typo'}) {
 	this.message = message
+	this.ms = ms
+	this.remove = remove
+	this.infinity = infinity
+	this.selector = selector
+
 	const letters = Array.from(this.message)
 	const typo = document.getElementById(selector)
+
+	for (let type in typedTypes) {
+		typesValidator(type, this[type], typedTypes[type])
+	}
 
 	this.init = function () {
 		this.intervalMaker()
@@ -42,8 +53,4 @@ const Typed = function ({message = 'Test typo...', ms = 100, remove = false, inf
 	}
 }
 
-const typed = new Typed({
-	message: 'It all works fine...!',
-})
-
-typed.init()
+export default Typed
