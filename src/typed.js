@@ -9,7 +9,6 @@ const Typed = function ({message = 'Test typo...', ms = 100, remove = false, inf
 	this.infinity = infinity
 	this.selector = selector
 
-	const letters = Array.from(this.message)
 	const typo = document.getElementById(selector)
 
 	for (let type in typedTypes) {
@@ -17,7 +16,7 @@ const Typed = function ({message = 'Test typo...', ms = 100, remove = false, inf
 	}
 
 	this.init = function () {
-		this.intervalMaker()
+		this.sentenceTyper(this.message)
 	}
 
 	this.addLetter = function (letter) {
@@ -32,7 +31,9 @@ const Typed = function ({message = 'Test typo...', ms = 100, remove = false, inf
 		return delay(ms).then(() => typo.innerText = '')
 	}
 
-	this.intervalMaker = async function () {
+	this.sentenceTyper = async function (sentence) {
+		const letters = Array.from(sentence)
+		
 		for(let i = 0; i < letters.length; i++) {
 			await this.addLetter(letters[i])
 		}
@@ -48,7 +49,7 @@ const Typed = function ({message = 'Test typo...', ms = 100, remove = false, inf
 		}
 
 		if(infinity) {
-			this.intervalMaker()
+			this.sentenceTyper()
 		}
 	}
 }
