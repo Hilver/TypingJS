@@ -4,7 +4,7 @@
   "description": "A Lightweight styling extension for typing letters",
   "main": "typed.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "webpack -d",
     "start": "webpack-dev-server --output-public-path=/dist/"
   },
@@ -28,6 +28,7 @@
     "@babel/preset-env": "^7.6.3",
     "babel-loader": "^8.0.6",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
     "webpack": "^4.41.1",
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.2"
