@@ -2,7 +2,7 @@ import delay from './utils/delay'
 import typesValidator from './utils/typesValidator'
 import { typedTypes } from './types'
 
-const Typed = function ({message = 'Test typo...', ms = 100, remove = false, infinity = false, selector = 'typed'} = {}) {
+const Typed = function ({message = 'Test TypedJS...', ms = 100, remove = false, infinity = false, selector = 'typed'} = {}) {
 	this.message = message
 	this.ms = ms
 	this.remove = remove
@@ -33,7 +33,7 @@ const Typed = function ({message = 'Test typo...', ms = 100, remove = false, inf
 
 	this.sentenceTyper = async function (sentence) {
 		const letters = Array.from(sentence)
-		
+
 		for(let i = 0; i < letters.length; i++) {
 			await this.addLetter(letters[i])
 		}
@@ -49,13 +49,10 @@ const Typed = function ({message = 'Test typo...', ms = 100, remove = false, inf
 		}
 
 		if(infinity) {
-			this.sentenceTyper()
+			this.sentenceTyper(sentence)
 		}
 	}
 }
 
-const typed = new Typed()
-
-typed.init()
-
 export default Typed
+

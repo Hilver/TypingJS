@@ -8,7 +8,8 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'typed.min.js',
-		library: 'Typed'
+		library: 'typedjs',
+		libraryTarget: 'umd',
 	},
 	module: {
 		rules: [{

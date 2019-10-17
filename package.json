@@ -1,16 +1,16 @@
 {
-  "name": "typo",
+  "name": "typedjs",
   "version": "1.0.0",
   "description": "A Lightweight styling extension for typing letters",
-  "main": "typed.js",
+  "main": "dist/typed.min.js",
   "scripts": {
     "test": "jest",
-    "build": "webpack -d",
+    "build": "webpack -p",
     "start": "webpack-dev-server --output-public-path=/dist/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hilver/TypoJS.git"
+    "url": "git+https://github.com/Hilver/TypedJS.git"
   },
   "keywords": [
     "typing",
@@ -19,9 +19,9 @@
   "author": "Pawel Peczkowski",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Hilver/TypoJS/issues"
+    "url": "https://github.com/Hilver/TypedJS/issues"
   },
-  "homepage": "https://github.com/Hilver/TypoJS#readme",
+  "homepage": "https://github.com/Hilver/TypedJS#readme",
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/plugin-transform-runtime": "^7.6.2",
