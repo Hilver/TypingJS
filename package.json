@@ -1,5 +1,5 @@
 {
-  "name": "typingjs",
+  "name": "typingjs-js",
   "version": "1.0.0",
   "description": "A Lightweight styling extension for typing letters",
   "main": "dist/typing.min.js",
@@ -17,7 +17,7 @@
     "javascript"
   ],
   "author": "Pawel Peczkowski",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Hilver/TypingJS/issues"
   },

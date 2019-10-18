@@ -1,4 +1,4 @@
-# TypingJS ![](https://badgen.net/github/last-commit/Hilver/TypingJS)
+# TypingJS ![](https://badgen.net/github/last-commit/Hilver/TypingJS) ![](https://badgen.net/npm/v/typing-js) ![](https://badgen.net/github/license/Hilver/TypingJS)
 **TypingJS** is a small, lightweight and easy to use library for typing strings on your website.
 
 ## Install
@@ -8,7 +8,7 @@ $ npm install --save typingjs
 ## Usage
 `index.js`
 ```
-import TypingJs from 'typingjs';
+import TypingJs from 'typingjs-js';
 
 const typing = new TypingJs({
 	selector: 'typed',
