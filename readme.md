@@ -1,4 +1,4 @@
-# TypingJS
+# TypingJS ![](https://badgen.net/github/last-commit/Hilver/TypingJS)
 **TypingJS** is a small, lightweight and easy to use library for typing strings on your website.
 
 ## Install
