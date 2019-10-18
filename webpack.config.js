@@ -3,12 +3,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 	entry: {
-		app: './src/typed.js'
+		app: './src/typing.js'
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: 'typed.min.js',
-		library: 'typedjs',
+		filename: 'typing.min.js',
+		library: 'typingjs',
 		libraryTarget: 'umd',
 	},
 	module: {

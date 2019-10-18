@@ -1,36 +1,36 @@
-# TypedJS
-**TypedJS** is a small, lightweight and easy to use library for typing strings on your website.
+# TypingJS
+**TypingJS** is a small, lightweight and easy to use library for typing strings on your website.
 
 ## Install
 ```
-$ npm install --save typedjs
+$ npm install --save typingjs
 ```
 ## Usage
 `index.js`
 ```
-import TypedJs from 'typedjs';
+import TypingJs from 'typingjs';
 
-const typed = new TypedJs({
+const typing = new TypingJs({
 	selector: 'typed',
-	message: 'Hello from TypedJS!'
+	message: 'Hello from TypingJS!'
 });
 
-typed.init();
+typing.init();
 ```
 `index.html`
 ```
 <body>
-	<div id="typed"></div>
+	<div id="typingjs"></div>
 	<script src="index.js"></script>
 </body>
 ```
-![](https://github.com/Hilver/TypedJS/raw/master/mesia/sample1.gif)
+![](https://github.com/Hilver/TypingJS/raw/master/media/sample1.gif)
 ## Settings
-**TypedJS** has a few additional options which can you set:
+**TypingJS** has a few additional options which can you set:
 ```
-const typed = new TypedJs({
-    selector: string, // Tag ID, default: `typed`
-    message: string, // Text to display, default: 'Test TypedJS...'
+const typed = new TypingJs({
+    selector: string, // Tag ID, default: `typingjs`
+    message: string, // Text to display, default: 'Test TypingJS...'
     ms: number, // Speed of typing in milliseconds, default: 100
     remove: boolean, // Whether delete text in backspace mode, default: false
     infinity: boolean // Infinity loop, default: false

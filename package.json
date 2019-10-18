@@ -1,8 +1,8 @@
 {
-  "name": "typedjs",
+  "name": "typingjs",
   "version": "1.0.0",
   "description": "A Lightweight styling extension for typing letters",
-  "main": "dist/typed.min.js",
+  "main": "dist/typing.min.js",
   "scripts": {
     "test": "jest",
     "build": "webpack -p",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hilver/TypedJS.git"
+    "url": "git+https://github.com/Hilver/TypingJS.git"
   },
   "keywords": [
     "typing",
@@ -19,9 +19,9 @@
   "author": "Pawel Peczkowski",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Hilver/TypedJS/issues"
+    "url": "https://github.com/Hilver/TypingJS/issues"
   },
-  "homepage": "https://github.com/Hilver/TypedJS#readme",
+  "homepage": "https://github.com/Hilver/TypingJS#readme",
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/plugin-transform-runtime": "^7.6.2",
